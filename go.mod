@@ -20,7 +20,7 @@ require (
 	github.com/nmrshll/go-cp v0.0.0-20180115193924-61436d3b7cfa
 	github.com/onsi/ginkgo v1.14.1
 	github.com/onsi/gomega v1.10.1
-	github.com/projectcalico/api v0.0.0-20210625205943-fd2597b409f4
+	github.com/projectcalico/api v0.0.0-20210706154750-8686d6f77130
 	github.com/projectcalico/libcalico-go v1.7.2-0.20210626085404-b893bd8ebf1d
 	github.com/prometheus/common v0.9.1
 	github.com/rakelkar/gonetsh v0.0.0-20190930180311-e5c5ffe4bdf0
@@ -38,4 +38,7 @@ require (
 	k8s.io/utils v0.0.0-20201110183641-67b214c5f920
 )
 
-replace github.com/Microsoft/hcsshim => github.com/projectcalico/hcsshim v0.8.9-calico
+replace (
+	github.com/Microsoft/hcsshim => github.com/projectcalico/hcsshim v0.8.9-calico
+	github.com/projectcalico/libcalico-go => github.com/song-jiang/libcalico-go v1.6.1-0.20210708134917-57d184e33cef
+)
